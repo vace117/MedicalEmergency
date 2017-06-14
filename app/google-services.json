@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "911967246097",
+    "firebase_url": "https://medicalemergency-9b140.firebaseio.com",
+    "project_id": "medicalemergency-9b140",
+    "storage_bucket": "medicalemergency-9b140.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911967246097:android:706505a0c4be33cc",
+        "android_client_info": {
+          "package_name": "vace117.medicalemergency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911967246097-1l3023abm8vth7i43pn04mjvjhgj70pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu2Rtt3nGrwLIVL7wQo_56AFTa6f_BNYQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
