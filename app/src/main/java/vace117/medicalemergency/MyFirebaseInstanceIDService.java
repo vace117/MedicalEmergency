@@ -1,5 +1,7 @@
 package vace117.medicalemergency;
 
+import android.content.Intent;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -12,6 +14,9 @@ import com.google.firebase.iid.FirebaseInstanceIdService;
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     private static final String TAG = "MEFirebaseIIDService";
+
+    public static final String
+            ACTION_TOKEN_BROADCAST = MyFirebaseInstanceIDService.class.getName() + "_TokenRefreshBroadcast";
 
     /**
      * Called if InstanceID token is updated. This may occur if the security of
@@ -41,6 +46,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
      * @param token The new token.
      */
     private void sendRegistrationToServer(String token) {
-        // TODO: Implement this method to send token to your app server.
+        Intent intent = new Intent(ACTION_TOKEN_BROADCAST);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
 }

@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context="vace117.medicalemergency.AlarmActivity">
 
-    <include layout="@layout/content_alarm" />
 
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/emergency" />
+
+    </GridLayout>
 </android.support.design.widget.CoordinatorLayout>
